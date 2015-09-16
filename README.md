@@ -1,5 +1,15 @@
-# darcula-syntax theme
+# Atom Darcula Syntax
 
-A short description of your theme.
+A syntax theme ported from IntelliJ for Atom. Once you tried, you can't live without it.
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+Ported manually as accurately as possible.
+
+Suits best with [Nucleus Dark UI](https://atom.io/themes/nucleus-dark-ui).
+
+![Screenshot of theme](screenshot.png)
+
+## Notice
+Because Atom is still just a text editor, it doesn't parse your code (e.g. JS) in a way that IntelliJ does. That's why there are some differences between highlight same script in Atom and IntelliJ.
+
+## Know issues
+* **JS: instanceof, delete doesn't colored orange.** That's because atom-javascript package makes no difference between 'delete' and logical operators (!==, && etc). There is a [discussion](https://github.com/atom/language-javascript/issues/188) already.

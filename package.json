@@ -1,13 +1,13 @@
 {
   "name": "darcula-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "0.0.1",
+  "description": "An Atom syntax highlighting scheme based on IntelliJ Darcula",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/darcula-syntax",
+  "repository": "https://github.com/VitaliyR/darcula-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
