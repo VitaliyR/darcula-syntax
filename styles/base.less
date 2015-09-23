@@ -241,7 +241,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.name.tag {
-    color: @orange;
+    color: @light-orange;
 
     &.reference {
       color: @syntax-text-color;
@@ -296,7 +296,6 @@ atom-text-editor .search-results .marker.current-result .region,
     }
 
     .support,
-    .entity,
     .constant {
       color: @purple;
     }
@@ -324,6 +323,14 @@ atom-text-editor .search-results .marker.current-result .region,
     .property-value {
       color: @syntax-text-color;
       font-weight: normal;
+
+      .color {
+        font-weight: normal;
+
+        &.w3c-standard-color-name {
+          color: @syntax-text-color;
+        }
+      }
     }
   }
 
@@ -426,6 +433,17 @@ atom-text-editor .search-results .marker.current-result .region,
     text-decoration: underline;
     font-weight: bold;
   }
+}
+
+.todo,
+.fixme,
+.idea,
+.note,
+.review,
+.hack,
+.changed,
+.xxx {
+  color: @light-green;
 }
 
 @import "languages";
