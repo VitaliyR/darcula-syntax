@@ -6,11 +6,11 @@ Ported manually as accurately as possible.
 
 Suits best with [Nucleus Dark UI](https://atom.io/themes/nucleus-dark-ui).
 
-![Screenshot of theme](screenshot.png)
+![Screenshot of theme](https://raw.githubusercontent.com/VitaliyR/darcula-syntax/master/screenshot.png)
 
 # Suggestions
 
-* **Font:**: Menlo
+* **Font**: Menlo
 * **Theme**: [Nucleus Dark UI](https://atom.io/themes/nucleus-dark-ui)
 
 ## Notice
