@@ -8,6 +8,21 @@
   .constant.numeric {
     color: @blue;
   }
+
+  .other.property {
+    color: @light-orange;
+  }
+
+  .variable.object + .delimiter + .other.property {
+    color: @purple;
+  }
+
+  .operator {
+    &.delete,
+    &.instanceof {
+      color: @orange;
+    }
+  }
 }
 
 .css {
@@ -15,8 +30,36 @@
     color: @semi-light-orange;
   }
 
-  .constant.numeric {
-    color: @light-green;
+  .function {
+    color: @light-orange;
+  }
+
+  .entity.name.tag {
+     color: @orange;
+
+     &.reference {
+        color: @light-white;
+     }
+  }
+
+  .constant {
+    &.numeric {
+      color: @blue;
+    }
+
+    &.support {
+      color: @light-green;
+      font-weight: normal;
+    }
+
+    &.other {
+      .constant {
+        color: @blue;
+      }
+      &.color {
+        color: @blue;
+      }
+    }
   }
 
   .keyword {
@@ -54,6 +97,15 @@
   }
 }
 
+.scss {
+   .constant {
+      &.numeric,
+      &.color {
+         color: @blue;
+      }
+   }
+}
+
 .html {
   .entity.other.attribute-name {
     color: @syntax-text-color;
@@ -65,5 +117,64 @@
 
   .string {
     color: @light-green;
+  }
+
+  .meta.tag.doctype {
+    color: @light-orange;
+  }
+}
+
+.handlebars {
+  .string,
+  .meta.tag.template .string {
+    font-weight: normal;
+    color: @dark-green;
+  }
+}
+
+.php {
+  .punctuation.section.embedded {
+    color: @orange;
+    font-weight: bold;
+  }
+
+  .string {
+    color: @dark-green;
+  }
+
+  .constant,
+  .meta.function .constant {
+    color: @orange;
+    font-weight: bold;
+
+    &.numeric {
+      color: @blue;
+      font-weight: normal;
+    }
+
+    &.other {
+      color: @purple;
+      font-style: italic;
+      font-weight: normal;
+    }
+  }
+
+  .meta.function .support.class {
+    color: @syntax-text-color;
+  }
+
+  .storage.modifier,
+  .meta.function .storage.type.function {
+    font-weight: bold;
+  }
+
+  .variable,
+  .punctuation.definition.variable,
+  .punctuation.definition.array {
+    color: @purple;
+  }
+
+  .function-call {
+    color: @light-orange;
   }
 }
