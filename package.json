@@ -1,7 +1,7 @@
 {
   "name": "darcula-syntax",
   "theme": "syntax",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An Atom syntax highlighting scheme based on IntelliJ Darcula",
   "keywords": [
     "syntax",
