@@ -1,181 +1,181 @@
-.js {
-  &.storage.modifier,
-  &.storage.function,
-  &.variable.language{
+.syntax--js {
+  &.syntax--storage.syntax--modifier,
+  &.syntax--storage.syntax--function,
+  &.syntax--variable.syntax--language{
     font-weight: bold;
   }
 
-  .constant.numeric {
+  .syntax--constant.syntax--numeric {
     color: @blue;
   }
 
-  .other.property {
+  .syntax--other.syntax--property {
     color: @light-orange;
   }
 
-  .variable.object + .delimiter + .other.property {
+  .syntax--variable.syntax--object + .syntax--delimiter + .syntax--other.syntax--property {
     color: @purple;
   }
 
-  .operator {
-    &.delete,
-    &.instanceof,
-    &.typeof {
+  .syntax--operator {
+    &.syntax--delete,
+    &.syntax--instanceof,
+    &.syntax--typeof {
       color: @orange;
     }
   }
 }
 
-.css {
-  .comment {
+.syntax--css {
+  .syntax--comment {
     color: @semi-light-orange;
   }
 
-  .function {
+  .syntax--function {
     color: @light-orange;
   }
 
-  .entity.name.tag {
+  .syntax--entity.syntax--name.syntax--tag {
      color: @orange;
 
-     &.reference {
+     &.syntax--reference {
         color: @light-white;
      }
   }
 
-  .constant {
-    &.numeric {
+  .syntax--constant {
+    &.syntax--numeric {
       color: @blue;
     }
 
-    &.support {
+    &.syntax--support {
       color: @light-green;
       font-weight: normal;
     }
 
-    &.other {
-      .constant {
+    &.syntax--other {
+      .syntax--constant {
         color: @blue;
       }
-      &.color {
+      &.syntax--color {
         color: @blue;
       }
     }
   }
 
-  .keyword {
-    &.control {
+  .syntax--keyword {
+    &.syntax--control {
       font-weight: normal;
     }
   }
 
-  .meta {
-    &.variable {
-      .variable {
+  .syntax--meta {
+    &.syntax--variable {
+      .syntax--variable {
         color: @blue;
       }
 
-      .punctuation {
+      .syntax--punctuation {
         color: @syntax-text-color;
       }
     }
 
-    &.property-value {
-      .variable {
+    &.syntax--property-value {
+      .syntax--variable {
         color: @blue;
       }
 
-      &.keyword.control {
+      &.syntax--keyword.syntax--control {
         color: @light-orange;
       }
     }
   }
 }
 
-.less {
-  .variable {
+.syntax--less {
+  .syntax--variable {
     color: @blue;
   }
 }
 
-.scss {
-   .constant {
-      &.numeric,
-      &.color {
+.syntax--scss {
+   .syntax--constant {
+      &.syntax--numeric,
+      &.syntax--color {
          color: @blue;
       }
    }
 }
 
-.html {
-  .entity.other.attribute-name {
+.syntax--html {
+  .syntax--entity.syntax--other.syntax--attribute-name {
     color: @syntax-text-color;
   }
 
-  .punctuation.definition.tag {
+  .syntax--punctuation.syntax--definition.syntax--tag {
     color: @light-orange;
   }
 
-  .string {
+  .syntax--string {
     color: @light-green;
   }
 
-  .meta.tag.doctype {
+  .syntax--meta.syntax--tag.syntax--doctype {
     color: @light-orange;
   }
 }
 
-.handlebars {
-  .string,
-  .meta.tag.template .string {
+.syntax--handlebars {
+  .syntax--string,
+  .syntax--meta.syntax--tag.syntax--template .syntax--string {
     font-weight: normal;
     color: @dark-green;
   }
 }
 
-.php {
-  .punctuation.section.embedded {
+.syntax--php {
+  .syntax--punctuation.syntax--section.syntax--embedded {
     color: @orange;
     font-weight: bold;
   }
 
-  .string {
+  .syntax--string {
     color: @dark-green;
   }
 
-  .constant,
-  .meta.function .constant {
+  .syntax--constant,
+  .syntax--meta.syntax--function .syntax--constant {
     color: @orange;
     font-weight: bold;
 
-    &.numeric {
+    &.syntax--numeric {
       color: @blue;
       font-weight: normal;
     }
 
-    &.other {
+    &.syntax--other {
       color: @purple;
       font-style: italic;
       font-weight: normal;
     }
   }
 
-  .meta.function .support.class {
+  .syntax--meta.syntax--function .syntax--support.syntax--class {
     color: @syntax-text-color;
   }
 
-  .storage.modifier,
-  .meta.function .storage.type.function {
+  .syntax--storage.syntax--modifier,
+  .syntax--meta.syntax--function .syntax--storage.syntax--type.syntax--function {
     font-weight: bold;
   }
 
-  .variable,
-  .punctuation.definition.variable,
-  .punctuation.definition.array {
+  .syntax--variable,
+  .syntax--punctuation.syntax--definition.syntax--variable,
+  .syntax--punctuation.syntax--definition.syntax--array {
     color: @purple;
   }
 
-  .function-call {
+  .syntax--function-call {
     color: @light-orange;
   }
 }

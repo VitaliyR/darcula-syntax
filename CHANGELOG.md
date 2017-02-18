@@ -1,3 +1,6 @@
+## [0.2.0] - 2017-02-18
+* Updated support Atom 1.13
+
 ## [0.1.2] - 2017-01-13
 * Fix comments highlight for Atom 1.13
 
