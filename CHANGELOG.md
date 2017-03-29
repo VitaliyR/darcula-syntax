@@ -1,3 +1,6 @@
+## [0.2.1] - 2017-03-29
+* Fix colors for 'const' in JS
+
 ## [0.2.0] - 2017-02-18
 * Updated support Atom 1.13
 
